@@ -70,5 +70,5 @@ $countd = $countd ? " ".$countd." dlvrd." : "";
 $ru = getrusage();
 $time_end = microtime(true);
 $execution_time = $time_end - $time_start;
-if($execution_time>300) sendMessage("$execution_time sec", "3855828");
+if($execution_time>400) sendMessage("$execution_time sec", "3855828");
 echo "[$date] $execution_time s, used ".rutime($ru, $rustart, "utime")." ms comps, ".rutime($ru, $rustart, "stime")." ms syscalls. $countph phrs. Founded $countall, added ".$count.".$countd".PHP_EOL;
